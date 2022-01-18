@@ -14,9 +14,9 @@ You can get and setup the current script on a Raspberry device following the nex
 sudo apt-get update
 sudo apt-get install git
 
-cd /opt
-git clone https://github.com/J-Rios/lorawan-rpigeneui.git
-sudo ln -s /opt/lorawan-rpigeneui/rpigeneui.py /usr/local/bin/rpigeneui
+sudo git clone https://github.com/J-Rios/lorawan-rpigeneui.git /opt/lorawan-rpigeneui
+sudo ln -s /opt/lorawan-rpigeneui/rpigeneui.py /usr/local/bin/rpi-gen-eui
+sudo chmod +x /usr/local/bin/rpi-gen-eui
 ```
 
 ## Usage
@@ -24,5 +24,5 @@ sudo ln -s /opt/lorawan-rpigeneui/rpigeneui.py /usr/local/bin/rpigeneui
 To get the EUI, just run the script:
 
 ```bash
-rpigeneui
+rpi-gen-eui
 ```
